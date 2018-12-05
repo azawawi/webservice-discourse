@@ -1,0 +1,16 @@
+platform: x64
+
+install:
+  - '"C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\SetEnv.cmd" /x64'
+  - choco install strawberryperl --allow-empty-checksums
+  - SET PATH=C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;%PATH%
+  - perl --version
+  - cpanm Dist::Zilla
+  - dzil authordeps | xargs cpanm
+
+build: off
+
+test_script:
+  - dzil test --release
+
+shallow_clone: true
