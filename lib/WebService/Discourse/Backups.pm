@@ -1,4 +1,6 @@
 
+# ABSTRACT: Discourse Backups Endpoint
+# VERSION
 
 package WebService::Discourse::Backups;
 

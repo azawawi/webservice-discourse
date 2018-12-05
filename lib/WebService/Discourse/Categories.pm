@@ -1,4 +1,6 @@
 
+# ABSTRACT: Discourse Categories Endpoint
+# VERSION
 
 package WebService::Discourse::Categories;
 

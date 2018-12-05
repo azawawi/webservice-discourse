@@ -1,4 +1,7 @@
 
+# ABSTRACT: Discourse Email Endpoint
+# VERSION
+
 package WebService::Discourse::Email;
 
 use Modern::Perl;

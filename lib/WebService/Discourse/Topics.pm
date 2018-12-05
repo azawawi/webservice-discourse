@@ -1,4 +1,7 @@
 
+# ABSTRACT: Discourse Topics Endpoint
+# VERSION
+
 package WebService::Discourse::Topics;
 
 use Modern::Perl;

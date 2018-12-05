@@ -1,4 +1,7 @@
 
+# ABSTRACT: Discourse Posts Endpoint
+# VERSION
+
 package WebService::Discourse::Posts;
 
 use Modern::Perl;
