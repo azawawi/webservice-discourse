@@ -1,5 +1,6 @@
 
 # ABSTRACT: Use Discourse API in Perl
+# VERSION
 
 package WebService::Discourse;
 
@@ -59,3 +60,34 @@ has 'api_username' => (
 );
 
 1;
+
+__END__
+
+=pod
+
+=head1 SYNOPSIS
+
+  use Modern::Perl;
+  use WebService::Discourse;
+
+  my $discourse = WebService::Discourse->new;
+  say $discourse->latest_topics;
+  say $discourse->categories;
+
+=head1 DESCRIPTION
+
+Use L<Discourse|https://discourse.org> L<REST API|https://docs.discourse.org/>
+in Perl.
+
+B<Note: This is currently experimental and API may change. Please DO NOT use in
+a production environment>.
+
+=head1 SEE ALSO
+
+=over 4
+
+=item L<Ruby API for Discourse|https://github.com/discourse/discourse_api>
+
+=item L<Discourse API Documentation (latest)|https://docs.discourse.org/>
+
+=back

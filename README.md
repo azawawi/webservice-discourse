@@ -11,7 +11,6 @@ a production environment.**
 ## Example
 
 ```perl
-
 use Modern::Perl;
 use WebService::Discourse;
 
